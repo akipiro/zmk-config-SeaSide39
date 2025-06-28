@@ -18,7 +18,24 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        chg_lang {
+            bindings = <&kp LA(GRAVE)>;
+            key-positions = <16 17>;
+        };
+
+        left_button {
+            bindings = <&mkp MB1>;
+            key-positions = <26 27>;
+        };
+
+        right_button {
+            bindings = <&mkp RCLK>;
+            key-positions = <27 28>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -26,6 +43,14 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        chg_lang: chg_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>;
+
+            label = "CHG_LANG";
         };
     };
 
