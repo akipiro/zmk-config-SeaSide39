@@ -44,7 +44,7 @@ combos {
         };
 
         scroll {
-            bindings = <&lt 5 &kp MS_BTN3>;
+            bindings = <&lt 5 B>;
             key-positions = <26 28>;
         };
 
