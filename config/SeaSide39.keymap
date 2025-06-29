@@ -14,10 +14,10 @@
 };
 
 &lt {
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
     quick-tap-ms = <0>;
     retro-tap;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <300>;
 };
 
 / {
