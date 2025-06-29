@@ -40,7 +40,7 @@
         };
 
         scroll {
-            bindings = <&layer_mousekp 5 MB3>;
+            bindings = <&mo 5>;
             key-positions = <26 28>;
         };
 
@@ -52,6 +52,11 @@
         layer6 {
             bindings = <&mo 6>;
             key-positions = <9 8 7 6>;
+        };
+
+        mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <26 29>;
         };
     };
 
