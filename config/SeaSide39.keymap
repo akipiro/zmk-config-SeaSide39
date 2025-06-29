@@ -37,7 +37,7 @@
         };
 
         scroll {
-            bindings = <&lt 5 B>;
+            bindings = <&lt 5 &kp MS_BTN3>;
             key-positions = <26 28>;
         };
 
