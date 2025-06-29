@@ -17,7 +17,7 @@
     flavor = "balanced";
     quick-tap-ms = <0>;
     retro-tap;
-    tapping-term-ms = <300>;
+    tapping-term-ms = <150>;
 };
 
 / {
