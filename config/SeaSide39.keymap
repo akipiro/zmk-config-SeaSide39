@@ -10,14 +10,14 @@
 &mt {
     flavor = "tap-unless-interrupted";
     quick-tap-ms = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
     flavor = "tap-unless-interrupted";
     quick-tap-ms = <0>;
     retro-tap;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <150>;
 };
 
 / {
