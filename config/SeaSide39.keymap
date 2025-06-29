@@ -17,6 +17,13 @@
     quick-tap-ms = <300>;
 };
 
+combos {
+    scroll_combo {
+        bindings = <&mo 5>;  // 押してる間レイヤー5
+        key-positions = <26 28>;
+    };
+};
+
 / {
     combos {
         compatible = "zmk,combos";
