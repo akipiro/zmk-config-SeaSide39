@@ -37,18 +37,13 @@
         };
 
         scroll {
-            bindings = <&lt 5 B>;
+            bindings = <&lt 5 &mkp MB3>;
             key-positions = <26 28>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-        };
-
-        scroll_combo {
-            bindings = <&mo 5>;  // 押してる間レイヤー5
-            key-positions = <26 28>;
         };
     };
 
