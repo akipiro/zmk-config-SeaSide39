@@ -37,7 +37,7 @@
         };
 
         scroll {
-            bindings = <&mo 5>;
+            bindings = <&lt 5 B>;
             key-positions = <26 28>;
         };
 
@@ -51,7 +51,10 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings =
+                <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_press>;
+
             label = "TO_LAYER_0";
         };
     };
