@@ -81,6 +81,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        layer_mousekp: layer_mousekp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MOUSEKP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
