@@ -86,21 +86,6 @@
 
             label = "CHG_LANG";
         };
-
-        mod_delay: mod_delay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <2>;
-            bindings =
-                <&macro_press>,
-                <&kp $0>,
-                <&macro_wait_time 50>,
-                <&macro_tap>,
-                <&kp $1>,
-                <&macro_release>,
-                <&kp $0>;
-
-            label = "MOD_DELAY";
-        };
     };
 
     behaviors {
@@ -120,6 +105,16 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
+        };
+        mod_with_delay: macro {
+          compatible = "zmk,behavior-macro";
+          label = "MOD_WITH_DELAY";
+          #binding-cells = <2>;  // パラメータを2つ受け取る
+          bindings = <
+            &kp $0          // 修飾キー（Altなど）
+            &wait-ms 30     // 少し待つ
+            &kp $1          // 通常キー（Graveなど）
+          >;
         };
     };
 
