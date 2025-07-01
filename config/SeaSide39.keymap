@@ -86,6 +86,21 @@
 
             label = "CHG_LANG";
         };
+
+        mod_delay: mod_delay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <2>;
+            bindings =
+                <&macro_press>,
+                <&kp $0>,
+                <&macro_wait_time 50>,
+                <&macro_tap>,
+                <&kp $1>,
+                <&macro_release>,
+                <&kp $0>;
+
+            label = "MOD_DELAY";
+        };
     };
 
     behaviors {
@@ -124,10 +139,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp LS(N2)     &kp HASH          &kp DOLLAR    &kp PERCENT                          &kp AMPERSAND      &kp LS(N8)     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL
-&kp GRAVE        &kp TILDE      &none             &kp PIPE      &kp CARET                            &kp COLON          &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&trans           &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &none                                &kp DOUBLE_QUOTES  &kp SQT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH
-&trans           &trans         &trans            &kp TAB       &kp SPACE    &trans      &kp DELETE  &kp BACKSPACE                                                                  &trans
+&kp EXCLAMATION  &mod_delay LS N2     &kp HASH          &kp DOLLAR    &kp PERCENT                          &kp AMPERSAND      &kp LS N8      &mod_delay LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL
+&kp GRAVE        &kp TILDE            &none             &kp PIPE      &kp CARET                            &kp COLON          &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
+&trans           &kp LESS_THAN        &kp GREATER_THAN  &kp QUESTION  &none                                &kp DOUBLE_QUOTES  &kp SQT        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH
+&trans           &trans               &trans            &kp TAB       &kp SPACE    &trans      &kp DELETE  &kp BACKSPACE                                                                  &trans
             >;
         };
 
