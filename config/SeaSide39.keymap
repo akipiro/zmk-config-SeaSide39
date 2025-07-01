@@ -87,7 +87,7 @@
             label = "CHG_LANG";
         };
 
-        mod_shift: mod_delay {
+        mod_delay: mod_delay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <2>;
             bindings =
