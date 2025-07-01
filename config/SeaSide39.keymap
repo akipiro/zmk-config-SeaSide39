@@ -26,7 +26,7 @@
         compatible = "zmk,combos";
 
         chg_lang {
-            bindings = <&kp LA(GRAVE)>;
+            bindings = <&chg_lang>;
             key-positions = <16 17>;
         };
 
@@ -70,6 +70,14 @@
                 <&macro_press>;
 
             label = "TO_LAYER_0";
+        };
+
+        chg_lang: chg_lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT>, <&macro_wait_time 50>, <&kp GRAVE>;
+
+            label = "CHG_LANG";
         };
     };
 
