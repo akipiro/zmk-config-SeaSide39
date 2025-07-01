@@ -76,7 +76,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT &macro_delay 20 $kp GRAVE &macro_release &kp LALT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_wait_time 20>,
+                <&kp GRAVE>,
+                <&macro_release>;
 
             label = "CHG_LANG";
         };
