@@ -79,8 +79,10 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_wait_time 50>,
+                <&macro_tap>,
                 <&kp GRAVE>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LALT>;
 
             label = "CHG_LANG";
         };
