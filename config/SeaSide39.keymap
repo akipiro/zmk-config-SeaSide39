@@ -78,7 +78,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LALT>,
-                <&macro_wait_time 20>,
+                <&macro_wait_time 50>,
                 <&kp GRAVE>,
                 <&macro_release>;
 
