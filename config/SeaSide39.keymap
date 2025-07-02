@@ -139,19 +139,19 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &mod_delay LEFT_SHIFT NUMBER_2  &kp HASH          &kp DOLLAR    &kp PERCENT                          &kp AMPERSAND      &mod_delay LEFT_SHIFT N8  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EQUAL
-&kp GRAVE        &kp TILDE                       &none             &kp PIPE      &kp CARET                            &kp COLON          &kp SEMICOLON             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS
-&trans           &kp LESS_THAN                   &kp GREATER_THAN  &kp QUESTION  &none                                &kp DOUBLE_QUOTES  &kp SQT                   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp NON_US_BACKSLASH
-&trans           &trans                          &trans            &kp TAB       &kp SPACE    &trans      &kp DELETE  &kp BACKSPACE                                                                             &trans
+&mod_delay LEFT_SHIFT NUMBER_1  &mod_delay LEFT_SHIFT NUMBER_2  &mod_delay LEFT_SHIFT NUMBER_3  &mod_delay LEFT_SHIFT NUMBER_4    &mod_delay LEFT_SHIFT N5                                &mod_delay LEFT_SHIFT N7         &mod_delay LEFT_SHIFT N8  &mod_delay LEFT_SHIFT LEFT_BRACKET  &mod_delay LEFT_SHIFT RIGHT_BRACKET  &kp EQUAL
+&kp GRAVE                       &mod_delay LEFT_SHIFT GRAVE     &none                           &mod_delay LEFT_SHIFT BACKSLASH   &mod_delay LEFT_SHIFT NUMBER_6                          &mod_delay LEFT_SHIFT SEMICOLON  &kp SEMICOLON             &mod_delay LEFT_SHIFT N9            &mod_delay LEFT_SHIFT N0             &mod_delay LEFT_SHIFT EQUAL
+&trans                          &mod_delay LEFT_SHIFT COMMA     &mod_delay LEFT_SHIFT PERIOD    &mod_delay LEFT_SHIFT LEFT_SHIFT  &none                                                   &mod_delay LEFT_SHIFT SQT        &kp SQT                   &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                    &kp NON_US_BACKSLASH
+&trans                          &trans                          &trans                          &kp TAB                           &kp SPACE                       &trans      &kp DELETE  &kp BACKSPACE                                                                                                                       &trans
             >;
         };
 
         NUM {
             bindings = <
-&trans          &kp F7  &kp F8  &kp F9  &kp F12                             &kp ASTERISK      &kp N7  &kp N8        &kp N9  &kp MINUS
-&kp CAPSLOCK    &kp F4  &kp F5  &kp F6  &kp F11                             &kp SLASH         &kp N4  &kp NUMBER_5  &kp N6  &kp SLASH
-&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F10                             &kp N0            &kp N1  &kp N2        &kp N3  &kp PERIOD
-&trans          &trans  &trans  &trans  &trans   &trans      &kp LESS_THAN  &kp GREATER_THAN                                &kp COMMA
+&trans          &kp F7  &kp F8  &kp F9  &kp F12                             &mod_delay LEFT_SHIFT N8  &kp N7  &kp N8        &kp N9  &kp MINUS
+&kp CAPSLOCK    &kp F4  &kp F5  &kp F6  &kp F11                             &kp SLASH                 &kp N4  &kp NUMBER_5  &kp N6  &kp SLASH
+&kp LEFT_SHIFT  &kp F1  &kp F2  &kp F3  &kp F10                             &kp N0                    &kp N1  &kp N2        &kp N3  &kp PERIOD
+&trans          &trans  &trans  &trans  &trans   &trans      &kp LESS_THAN  &kp GREATER_THAN                                        &kp COMMA
             >;
         };
 
