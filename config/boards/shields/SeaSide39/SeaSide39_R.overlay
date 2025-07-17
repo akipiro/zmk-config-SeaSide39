@@ -69,7 +69,7 @@
 
 
 /* 充電電流設定: 常に100mA */
-&gpio0 {
+&gpio {
     charge100mA: charge100mA {
         gpios = <13 GPIO_OUTPUT_LOW>;
         label = "charge_100mA";
