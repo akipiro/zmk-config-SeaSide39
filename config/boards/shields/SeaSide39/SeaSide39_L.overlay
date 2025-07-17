@@ -10,3 +10,10 @@
             , <&xiao_d 0 GPIO_ACTIVE_HIGH>
             ;
 };
+
+/* 充電電流設定: 常に100mA */
+&xiao_d13 {
+    gpio-hog;
+    output-low;  /* LOWに固定で100mA充電 */
+    line-name = "charge_100mA";
+};
