@@ -67,11 +67,11 @@
     };
 };
 
+
 /* 充電電流設定: 常に100mA */
 &gpio0 {
-    charge100mA {
-        gpio-hog;
+    charge100mA: charge100mA {
         gpios = <13 GPIO_OUTPUT_LOW>;
-        line-name = "charge_100mA";
+        label = "charge_100mA";
     };
 };
