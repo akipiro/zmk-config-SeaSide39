@@ -44,7 +44,7 @@
 };
 
 /* シリアルを無効化 */
-&uart0 { status = "disabled"; };
+&xiao_serial { status = "disabled"; };
 
 /* SPI デバイス (トラックボール) */
 &spi0 {
